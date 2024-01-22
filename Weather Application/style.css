@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #222831;
+    
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #414141;
+}
+.container{
+    border: 1px solid lightgrey;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    min-height: 50vh;
+    min-width: 25vw;
+    background : linear-gradient(135deg, #00feba , #5b548a);
+    border-radius: 1.75rem;
+    
+}
+.container .search,.weather_img,.temperature,.city,.humidity_wind{
+    margin-top: 0.5rem;
+    
+}
+
+.container .search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    height: 3.5rem;
+    min-width: 75%;
+    border: none;
+    outline: none;
+    border-radius: 2rem;
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+button{
+    /* background : linear-gradient(135deg, #00feba , #5b548a); */
+    border: none;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 100%; 
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.weather_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 4rem;
+}
+.city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+.humidity_wind{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+}
+.humidity_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+}
+#humidity_percentage{
+    padding-left: 0.75rem;
+}
+
+.wind_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;  
+}
+#wind_logo{
+    padding-right: 0.75rem;
+}

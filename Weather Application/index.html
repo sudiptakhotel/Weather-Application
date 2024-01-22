@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style sheet linking -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>weather app</title>    
+</head>
+<body>
+    <div class="container">
+        <!-- search div -->
+        <form action="">
+            <div class="search">
+                <input type="text"  id="search_item" placeholder="enter city name">
+    
+                <button><i class="fa-solid fa-magnifying-glass search_icon"></i></button>
+            </div>
+            
+            <div class="weather">
+                <!-- weather icon -->
+            <div class="weather_img">
+                <img src="./asset/images/clear.png" alt="current weather image" id="weather_image">
+            </div>
+    
+            <!-- temperature -->
+            <div class="temperature">
+                <h2>°c</h2>
+            </div>
+            <!-- city name -->
+            <div class="city">
+                <p id="cityname">City</p>
+            </div>
+    
+            <!-- humidity and wind speed -->
+            <div class="humidity_wind">
+                <div class="humidity">
+                    <div class="humidity_flex">
+                        <img src="./asset/images/humidity.png" id="humidity_logo" alt="humidity logo" height="30px" width="30px">
+                        <p id="humidity_percentage">0%</p>
+                    </div>
+                    <p>Humidity</p>
+                </div>
+    
+                <div class="wind_speed">
+                    <div class="wind_flex">
+                        <img src="./asset/images/wind.png" alt="wind speed logo" id="wind_logo" height="30px" width="30px">
+                        <p id="wind-speed">0km/h</p>
+                    </div>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            </div>
+            
+        </form>
+        
+    </div>
+
+
+
+
+
+
+    <!-- script linking -->
+    <script src="app.js"></script>
+</body>
+</html>
